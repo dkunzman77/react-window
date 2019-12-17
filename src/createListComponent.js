@@ -215,6 +215,7 @@ export default function createListComponent({
     scrollToItem(index: number, align: ScrollToAlign = 'auto'): void {
       const { itemCount } = this.props;
       const { scrollOffset } = this.state;
+      console.warn(scrollOffset);
 
       index = Math.max(0, Math.min(index, itemCount - 1));
 
